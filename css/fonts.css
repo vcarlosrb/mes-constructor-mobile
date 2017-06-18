@@ -1,0 +1,17 @@
+@font-face{
+    font-family: 'font1';
+    src: url('fonts/miso_bold.eot');
+    src: url('fonts/miso_bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/miso_bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'font2';
+    src: url('fonts/miso_light.eot');
+    src: url('fonts/miso_light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/miso_light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>App Sodimac</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="partPhoto">
+    <div class="ppContent">
+        <div class="ppCamera">
+            <div class="wrapperLoader">
+                <div class="contLoader">
+                    <div class="loader">
+                        <svg class="circular" viewBox="25 25 50 50">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3"
+                                    stroke-miterlimit="10"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="ppcWrapper">
+                <div class="dragPhoto">
+                    <div class="dpContent">
+                        <img id="userPhoto" src="" alt="">
+                    </div>
+                    <!--<div class="panelZoom">-->
+                        <!--<input type="range" max="1" class="zoom-range">-->
+                    <!--</div>-->
+                </div>
+                <img id="coverPhoto" src="" alt="">
+                <div class="pwFooter">
+                    <p>#MesDelConstructor</p>
+                    <img src="images/new/logo_sodimac.jpg" alt="">
+                </div>
+                <div class="ppfButton" id="contTakePhoto">
+                    <p>TÓMESE UNA FOTO O <br> ELIJA DESDE SU ÁLBUM <br> PARA EMPEZAR</p>
+                    <a>
+                        <img src="images/new/buttonCamera.jpg" alt="Button Camera">
+                        <input type="file" id="takePhoto" accept="image/*">
+                    </a>
+                </div>
+                <ul class="opZoom" id="opZoom">
+                    <li id="zoomM">
+                        <i class="fa fa-minus"></i>
+                    </li>
+                    <li id="zoomP">
+                        <i class="fa fa-plus"></i>
+                    </li>
+                </ul>
+                <ul class="btnOptions" id="opPhoto">
+                    <li id="clearAll">
+                        <img src="images/new/ico_delete.jpg" alt="">
+                    </li>
+                    <li id="changeCover">
+                        <img src="images/new/ico_refresh.jpg" alt="">
+                    </li>
+                    <li id="dragPhoto">
+                        <img src="images/new/ico_setting.jpg" alt="">
+                    </li>
+                    <li id="acceptAll">
+                        <img src="images/new/ico_accept.jpg" alt="">
+                    </li>
+                    <li id="checkDrag">
+                        <img src="images/new/ico_accept.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <img id="resultPhoto" src="" alt="">
+        </div>
+        <div class="ppFooter">
+            <div class="takePhotoStep">
+                <div class="ppfText" id="textEsp">ENCAJE SU ESPECIALIDAD</div>
+                <ul class="ppfTypes">
+                    <li style="background-image: url(images/new/option1.jpg)" cat="1"></li>
+                    <li style="background-image: url(images/new/option2.jpg)" cat="2"></li>
+                    <li style="background-image: url(images/new/option3.jpg)" cat="3"></li>
+                    <li style="background-image: url(images/new/option4.jpg)" cat="4"></li>
+                </ul>
+            </div>
+            <div class="lastStep" style="background-image: url(images/new/texture.jpg)">
+                <ul>
+                    <li id="shareFacebook">
+                        <img src="images/new/btnShareFb.png" alt="">
+                    </li>
+                    <li>
+                        <a id="saveImage" href="">
+                            <img src="images/new/btnSave.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="partHome">
+    <div class="phWrapper">
+        <div class="phBottom">
+            <div class="phText">
+                <h4>ESPECIALISTA</h4>
+                <p>Siga estas instrucciones y participe</p>
+                <a id="loginFacebook" style="background-image: url(images/new/bttn.png)">
+                    <i class="fa fa-facebook"></i>
+                    <span>ENTRAR CON FACEBOOK</span>
+                </a>
+            </div>
+            <ul class="phOptions">
+                <li>
+                    <img src="images/new/homeOption1.png" alt="Opcion 1">
+                    <p>Tómese una foto</p>
+                </li>
+                <li>
+                    <img src="images/new/homeOption2.png" alt="Opcion 2">
+                    <p>Elija su especialidad</p>
+                </li>
+            </ul>
+            <div class="phComercial">
+                <img id="showCommercial" src="images/new/comercial.jpg" alt="">
+            </div>
+            <ul class="phFooter">
+                <li>
+                    <a href="http://www.circulodeespecialistas.pe/" target="_blank">
+                        <img src="images/new/logo_ces.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.sodimac.com.pe/sodimac-pe/content/a130001/sodimac-constructor" target="_blank">
+                        <img src="images/new/logo_sodimac.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="mod modCommercial">
+    <div class="mcContent">
+        <div class="mccWrapper">
+            <div class="mcClose" id="closeCommercial">
+                <img src="images/new/closePopup.png" alt="">
+            </div>
+            <img class="mcImage" src="images/new/popup.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="mod modShare">
+    <div class="msContent">
+        <div class="contMod">
+            <p>Su foto ha sido publicada en Facebook.</p>
+        </div>
+    </div>
+</div>
+
+<script src="script/jquery.js"></script>
+<script src="script/jquery-ui.js"></script>
+<script src="script/jquery.panzoom.js"></script>
+<script src="script/jquery.mousewheel.js"></script>
+<script src="script/jquery.ui.touch.js"></script>
+<script src="script/html2canvas.js"></script>
+<script src="script/script.js"></script>
+<script>$('#userPhoto').draggable();</script>
+
+<!--<script>-->
+    <!--(function () {-->
+        <!--var $section = $('.dragPhoto');-->
+        <!--$section.find('.dpContent').panzoom({-->
+            <!--$zoomRange: $section.find(".zoom-range"),-->
+            <!--maxScale: 1,-->
+            <!--minScale: 0.3-->
+        <!--});-->
+    <!--})();-->
+<!--</script>-->
+
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '263484560712722',
+            xfbml: true,
+            version: 'v2.7'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+</html>

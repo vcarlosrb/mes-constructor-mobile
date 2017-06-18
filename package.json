@@ -1,0 +1,24 @@
+{
+  "name": "sodimac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mediabyte/mccann-dinamica-mes-constructor-mobile.git"
+  },
+  "author": "carlos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/mediabyte/mccann-dinamica-mes-constructor-mobile/issues"
+  },
+  "homepage": "https://gitlab.com/mediabyte/mccann-dinamica-mes-constructor-mobile#README",
+  "dependencies": {
+    "express": "^4.14.0",
+    "gzippo": "^0.2.0",
+    "morgan": "^1.7.0"
+  }
+}
